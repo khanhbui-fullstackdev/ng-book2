@@ -1,0 +1,11 @@
+<product-image [productImage]="productItem.imageUrl"></product-image>
+<div class="content">
+    <div class="header">{{productItem.name}}</div>
+    <div class="meta">
+        <div class="product-sku">SKU#{{productItem.sku}}</div>
+    </div>
+    <div class="description">
+        <product-department [productDepartment]="productItem"></product-department>
+    </div>
+</div>
+<price-display [productPrice]="productItem.price"></price-display>
